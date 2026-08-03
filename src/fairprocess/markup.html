@@ -51,6 +51,21 @@
                 </button>
 
                 <div class="fp-nav-label">Compliance</div>
+                <button class="fp-nav-item" data-page="defense-score">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Defense Score</span>
+                    <span class="fp-nav-badge">82%</span>
+                </button>
+                <button class="fp-nav-item" data-page="defense-playbook">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                    <span>Defense Playbook</span>
+                    <span class="fp-nav-badge">4</span>
+                </button>
+                <button class="fp-nav-item" data-page="records-ai">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Public Records AI</span>
+                    <span class="fp-nav-badge">6</span>
+                </button>
                 <button class="fp-nav-item" data-page="rules">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                     <span>Rules & Statutes</span>
@@ -63,6 +78,25 @@
                 <button class="fp-nav-item" data-page="public-records">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
                     <span>Public Records</span>
+                </button>
+
+                <div class="fp-nav-label">Property Intelligence</div>
+                <button class="fp-nav-item" data-page="property-profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-7 9 7v10a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    <span>Parcel Profile</span>
+                </button>
+                <button class="fp-nav-item" data-page="knowledge-graph">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><line x1="6.7" y1="7.4" x2="10.6" y2="16.3"/><line x1="17.3" y1="7.4" x2="13.4" y2="16.3"/><line x1="7" y1="6" x2="17" y2="6"/></svg>
+                    <span>Knowledge Graph</span>
+                </button>
+                <button class="fp-nav-item" data-page="agents">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V4h6v3"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>
+                    <span>Agent Pipeline</span>
+                </button>
+                <button class="fp-nav-item" data-page="watch">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <span>Watch Monitor</span>
+                    <span class="fp-nav-badge">3</span>
                 </button>
 
                 <div class="fp-nav-label">System</div>
@@ -616,6 +650,247 @@
                             <div class="fp-tl-item"><span class="fp-tl-dot pending"></span><div class="fp-tl-title">Inspection Conducted <span class="fp-tl-badge upcoming">Pending</span></div><div class="fp-tl-meta">Case FP-2024-0187 · Scheduled Jun 3, 2024</div></div>
                             <div class="fp-tl-item"><span class="fp-tl-dot pending"></span><div class="fp-tl-title">Administrative Hearing <span class="fp-tl-badge upcoming">Scheduled</span></div><div class="fp-tl-meta">Case FP-2024-0187 · Jun 15, 2024</div></div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- ===== DEFENSE SCORE PAGE ===== -->
+                <div class="fp-page" id="page-defense-score">
+                    <h1 class="fp-page-title">Defense Strength Score</h1>
+                    <p class="fp-page-subtitle">Case CE26-0402 · Notice of Violation · City of Eureka · 1234 Main Street, Eureka, CA</p>
+                    <div class="fp-score-layout">
+                        <div class="fp-panel fp-score-card">
+                            <div class="fp-score-ring" style="--fp-score:82">
+                                <div class="fp-score-value">82%</div>
+                                <div class="fp-score-caption">Strong position</div>
+                            </div>
+                            <p class="fp-score-note">Score reflects evidence quality, procedural errors detected, and records still missing from the administrative file.</p>
+                        </div>
+                        <div class="fp-score-metrics">
+                            <div class="fp-metric-card"><div class="fp-metric-label">Evidence quality</div><div class="fp-metric-value good">94%</div><div class="fp-metric-bar"><span style="width:94%"></span></div></div>
+                            <div class="fp-metric-card"><div class="fp-metric-label">Procedural errors found</div><div class="fp-metric-value warn">3</div><div class="fp-metric-sub">2 critical · 1 warning</div></div>
+                            <div class="fp-metric-card"><div class="fp-metric-label">Missing records</div><div class="fp-metric-value warn">2</div><div class="fp-metric-sub">Blocking full analysis</div></div>
+                            <div class="fp-metric-card"><div class="fp-metric-label">Days to respond</div><div class="fp-metric-value bad">9</div><div class="fp-metric-sub">Due Jul 24, 2026</div></div>
+                        </div>
+                    </div>
+
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">AI Discoveries</div>
+                        <div class="fp-discoveries">
+                            <div class="fp-discovery critical"><span class="fp-discovery-dot"></span><div><div class="fp-discovery-text">Missing proof of certified service</div><div class="fp-discovery-source">HCC § 352-4</div></div></div>
+                            <div class="fp-discovery warning"><span class="fp-discovery-dot"></span><div><div class="fp-discovery-text">Notice served to prior owner (ownership transfer recorded 2022)</div><div class="fp-discovery-source">Recorder</div></div></div>
+                            <div class="fp-discovery warning"><span class="fp-discovery-dot"></span><div><div class="fp-discovery-text">Hearing scheduled before statutory notice period elapsed</div><div class="fp-discovery-source">HCC § 351-7</div></div></div>
+                            <div class="fp-discovery verified"><span class="fp-discovery-dot"></span><div><div class="fp-discovery-text">Ownership history verified against Assessor records</div><div class="fp-discovery-source">Assessor · AI</div></div></div>
+                        </div>
+                    </div>
+
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">AI Narrative</div>
+                        <div class="fp-narrative">
+                            <div class="fp-narr done"><strong>Government action identified.</strong> Notice of Violation issued by City of Eureka.</div>
+                            <div class="fp-narr done"><strong>Applicable law located.</strong> Humboldt County Code § 352-4, § 352-5, § 351-7.</div>
+                            <div class="fp-narr done"><strong>Public record collection complete.</strong> 21 records analyzed from Assessor and Recorder.</div>
+                            <div class="fp-narr warn"><strong>Potential procedural defect detected.</strong> Certified mail evidence not located in the administrative record.</div>
+                            <div class="fp-narr warn"><strong>Ownership discrepancy found.</strong> Notice addressed to prior owner; transfer recorded in 2022.</div>
+                            <div class="fp-narr info"><strong>Defense playbook generated.</strong> 4 recommended strategies with confidence analysis.</div>
+                            <div class="fp-narr info"><strong>Public records AI ready.</strong> 6 missing records identified for request.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== DEFENSE PLAYBOOK PAGE ===== -->
+                <div class="fp-page" id="page-defense-playbook">
+                    <h1 class="fp-page-title">Defense Playbook</h1>
+                    <p class="fp-page-subtitle">Ranked strategies generated from detected procedural defects, with confidence analysis.</p>
+                    <div class="fp-playbook">
+                        <div class="fp-play">
+                            <div class="fp-play-rank">1</div>
+                            <div class="fp-play-body">
+                                <div class="fp-play-title">Challenge Service <span class="fp-conf high">94% confidence</span></div>
+                                <div class="fp-play-reason">No proof of certified mailing located in the administrative record.</div>
+                                <div class="fp-play-bar"><span style="width:94%"></span></div>
+                            </div>
+                            <button class="fp-btn primary">Draft</button>
+                        </div>
+                        <div class="fp-play">
+                            <div class="fp-play-rank">2</div>
+                            <div class="fp-play-body">
+                                <div class="fp-play-title">Request Administrative Record <span class="fp-conf high">96% confidence</span></div>
+                                <div class="fp-play-reason">Agency may have relied upon undisclosed evidence.</div>
+                                <div class="fp-play-bar"><span style="width:96%"></span></div>
+                            </div>
+                            <button class="fp-btn primary">Draft</button>
+                        </div>
+                        <div class="fp-play">
+                            <div class="fp-play-rank">3</div>
+                            <div class="fp-play-body">
+                                <div class="fp-play-title">Challenge Notice <span class="fp-conf medium">83% confidence</span></div>
+                                <div class="fp-play-reason">Ownership mismatch — notice mailed to prior owner.</div>
+                                <div class="fp-play-bar medium"><span style="width:83%"></span></div>
+                            </div>
+                            <button class="fp-btn">Draft</button>
+                        </div>
+                        <div class="fp-play">
+                            <div class="fp-play-rank">4</div>
+                            <div class="fp-play-body">
+                                <div class="fp-play-title">Request Continuance <span class="fp-conf medium">71% confidence</span></div>
+                                <div class="fp-play-reason">Public records request pending; additional time needed.</div>
+                                <div class="fp-play-bar medium"><span style="width:71%"></span></div>
+                            </div>
+                            <button class="fp-btn">Draft</button>
+                        </div>
+                    </div>
+
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">Quick actions</div>
+                        <div class="fp-quick-actions">
+                            <button class="fp-btn primary">✍ Generate response letter</button>
+                            <button class="fp-btn">📄 Generate records request</button>
+                            <button class="fp-btn">📬 Demand proof of service</button>
+                            <button class="fp-btn">✉ Mail certified</button>
+                            <button class="fp-btn">⬇ Export case package</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== PUBLIC RECORDS AI PAGE ===== -->
+                <div class="fp-page" id="page-records-ai">
+                    <h1 class="fp-page-title">Public Records AI</h1>
+                    <p class="fp-page-subtitle">Evidence-driven identification of records the agency has not produced. Estimated value: <strong>Very High</strong>.</p>
+                    <div class="fp-records-grid">
+                        <div class="fp-record-card"><div class="fp-record-name">Inspector field notes</div><div class="fp-record-meta">Likely to contradict cited observations · Code Enforcement</div></div>
+                        <div class="fp-record-card"><div class="fp-record-name">Incident photographs</div><div class="fp-record-meta">Establishes actual condition on inspection date</div></div>
+                        <div class="fp-record-card"><div class="fp-record-name">USPS certified mail receipt</div><div class="fp-record-meta">Directly tests service defect · HCC § 352-4</div></div>
+                        <div class="fp-record-card"><div class="fp-record-name">Inspection log</div><div class="fp-record-meta">Confirms whether inspection occurred as claimed</div></div>
+                        <div class="fp-record-card"><div class="fp-record-name">Internal agency emails</div><div class="fp-record-meta">May reveal undisclosed evidence or bias</div></div>
+                        <div class="fp-record-card"><div class="fp-record-name">Supervisor review memo</div><div class="fp-record-meta">Shows approval chain and standard applied</div></div>
+                    </div>
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">Request status</div>
+                        <div class="fp-timeline">
+                            <div class="fp-tl-item"><span class="fp-tl-dot done"></span><div class="fp-tl-title">Records identified by AI</div><div class="fp-tl-meta">6 records · Jul 15, 2026</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot scheduled"></span><div class="fp-tl-title">Request drafted, awaiting send</div><div class="fp-tl-meta">Public Records Act · CA Gov. Code § 7922</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot pending"></span><div class="fp-tl-title">Statutory agency reply due</div><div class="fp-tl-meta">Jul 25, 2026 · 10 days</div></div>
+                        </div>
+                        <button class="fp-btn primary" style="margin-top:16px;">Generate records request</button>
+                    </div>
+                </div>
+
+                <!-- ===== PARCEL PROFILE PAGE ===== -->
+                <div class="fp-page" id="page-property-profile">
+                    <h1 class="fp-page-title">Parcel Profile</h1>
+                    <p class="fp-page-subtitle">Identity anchor resolved by the Discovery Agent — every record hangs from this parcel.</p>
+                    <div class="fp-public-search">
+                        <input type="text" value="1234 Main Street, Eureka, CA 95501" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--fp-border);font-size:13px;font-family:inherit;" />
+                        <div class="fp-public-filters">
+                            <select class="fp-cases-filter"><option>Humboldt County</option></select>
+                            <button class="fp-btn primary">Resolve parcel</button>
+                        </div>
+                    </div>
+                    <div class="fp-stats" style="margin-top:20px;">
+                        <div class="fp-stat-card"><div class="fp-stat-label">🏠 APN</div><div class="fp-stat-value" style="font-size:20px;">303-122-009</div><div class="fp-stat-delta">Assessor verified</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">👤 Owner of record</div><div class="fp-stat-value" style="font-size:20px;">J. Doe</div><div class="fp-stat-delta">Transfer recorded 2022</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">🗺 Zoning</div><div class="fp-stat-value" style="font-size:20px;">R-1</div><div class="fp-stat-delta">Single-family residential</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">💵 Assessed value</div><div class="fp-stat-value" style="font-size:20px;">$450,000</div><div class="fp-stat-delta up">↑ 4% year over year</div></div>
+                    </div>
+                    <div class="fp-pi-grid">
+                        <div class="fp-panel">
+                            <div class="fp-panel-title">Permits</div>
+                            <div class="fp-pi-row"><span>Original dwelling permit</span><span class="fp-pi-meta">1987 · Finaled</span></div>
+                            <div class="fp-pi-row"><span>Re-roof permit</span><span class="fp-pi-meta">2009 · Finaled</span></div>
+                            <div class="fp-pi-row"><span>Accessory structure</span><span class="fp-pi-meta">No permit found</span></div>
+                        </div>
+                        <div class="fp-panel">
+                            <div class="fp-panel-title">Violations</div>
+                            <div class="fp-pi-row"><span>Unpermitted structure</span><span class="fp-pi-meta">CE26-0402 · Open</span></div>
+                            <div class="fp-pi-row"><span>Vegetation abatement</span><span class="fp-pi-meta">2019 · Closed</span></div>
+                        </div>
+                        <div class="fp-panel">
+                            <div class="fp-panel-title">Liens & encumbrances</div>
+                            <div class="fp-pi-row"><span>Deed of trust</span><span class="fp-pi-meta">2022 · Active</span></div>
+                            <div class="fp-pi-row"><span>Abatement lien</span><span class="fp-pi-meta">2019 · Released</span></div>
+                        </div>
+                        <div class="fp-panel">
+                            <div class="fp-panel-title">Hearings</div>
+                            <div class="fp-pi-row"><span>Administrative hearing</span><span class="fp-pi-meta">Aug 14, 2026</span></div>
+                            <div class="fp-pi-row"><span>Abatement hearing</span><span class="fp-pi-meta">2019 · Decided</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== KNOWLEDGE GRAPH PAGE ===== -->
+                <div class="fp-page" id="page-knowledge-graph">
+                    <h1 class="fp-page-title">Knowledge Graph</h1>
+                    <p class="fp-page-subtitle">Nothing exists alone. Parcels, owners, permits, violations, notices, mailings, liens, and hearings — all linked.</p>
+                    <div class="fp-panel">
+                        <div class="fp-graph">
+                            <svg viewBox="0 0 640 340" class="fp-graph-svg">
+                                <line x1="320" y1="170" x2="140" y2="70"/><line x1="320" y1="170" x2="520" y2="70"/>
+                                <line x1="320" y1="170" x2="120" y2="260"/><line x1="320" y1="170" x2="500" y2="260"/>
+                                <line x1="320" y1="170" x2="320" y2="310"/><line x1="140" y1="70" x2="520" y2="70"/>
+                                <circle cx="320" cy="170" r="34" class="n-parcel"/>
+                                <circle cx="140" cy="70" r="24" class="n-owner"/>
+                                <circle cx="520" cy="70" r="24" class="n-permit"/>
+                                <circle cx="120" cy="260" r="24" class="n-violation"/>
+                                <circle cx="500" cy="260" r="24" class="n-lien"/>
+                                <circle cx="320" cy="310" r="24" class="n-hearing"/>
+                                <text x="320" y="174">Parcel</text>
+                                <text x="140" y="74">Owner</text>
+                                <text x="520" y="74">Permit</text>
+                                <text x="120" y="264">Violation</text>
+                                <text x="500" y="264">Lien</text>
+                                <text x="320" y="314">Hearing</text>
+                            </svg>
+                            <div class="fp-graph-legend">
+                                <span><i class="n-parcel"></i>Parcel</span>
+                                <span><i class="n-owner"></i>Owner</span>
+                                <span><i class="n-permit"></i>Permit</span>
+                                <span><i class="n-violation"></i>Violation</span>
+                                <span><i class="n-lien"></i>Lien</span>
+                                <span><i class="n-hearing"></i>Hearing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">Property chronology</div>
+                        <div class="fp-timeline">
+                            <div class="fp-tl-item"><span class="fp-tl-dot done"></span><div class="fp-tl-title">Original permit issued</div><div class="fp-tl-meta">1987 · Building Department</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot done"></span><div class="fp-tl-title">Abatement lien recorded and released</div><div class="fp-tl-meta">2019 · Recorder</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot done"></span><div class="fp-tl-title">Ownership transfer recorded</div><div class="fp-tl-meta">2022 · Recorder</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot scheduled"></span><div class="fp-tl-title">Notice of Violation issued</div><div class="fp-tl-meta">Jul 15, 2026 · Code Enforcement</div></div>
+                            <div class="fp-tl-item"><span class="fp-tl-dot pending"></span><div class="fp-tl-title">Administrative hearing</div><div class="fp-tl-meta">Aug 14, 2026</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== AGENT PIPELINE PAGE ===== -->
+                <div class="fp-page" id="page-agents">
+                    <h1 class="fp-page-title">Agent Pipeline</h1>
+                    <p class="fp-page-subtitle">Six specialized agents. Each has one responsibility; together they turn raw records into property intelligence.</p>
+                    <div class="fp-agent-grid">
+                        <div class="fp-agent-card"><div class="fp-agent-icon">🔍</div><div class="fp-agent-num">Agent 1</div><div class="fp-agent-name">Discovery</div><p>Takes an address and builds the identity anchor: APN, legal description, geocode, assessor and recorder IDs.</p></div>
+                        <div class="fp-agent-card"><div class="fp-agent-icon">📚</div><div class="fp-agent-num">Agent 2</div><div class="fp-agent-name">Records</div><p>Collects everything: deeds, permits, violations, liens, notices, hearings, and mailings from every source.</p></div>
+                        <div class="fp-agent-card"><div class="fp-agent-icon">🔗</div><div class="fp-agent-num">Agent 3</div><div class="fp-agent-name">Entity Resolution</div><p>Connects the dots — deduplicates owners and aliases, and links every record back to the parcel.</p></div>
+                        <div class="fp-agent-card"><div class="fp-agent-icon">📅</div><div class="fp-agent-num">Agent 4</div><div class="fp-agent-name">Timeline</div><p>Builds a sourced, confidence-scored chronology of every event affecting the property.</p></div>
+                        <div class="fp-agent-card"><div class="fp-agent-icon">🧠</div><div class="fp-agent-num">Agent 5</div><div class="fp-agent-name">Intelligence</div><p>Reasons over the graph: procedural defects, missing records, and defense strength.</p></div>
+                        <div class="fp-agent-card"><div class="fp-agent-icon">👁</div><div class="fp-agent-num">Agent 6</div><div class="fp-agent-name">Watch</div><p>Continuous awareness — alerts when a new filing, permit, or lien touches a watched parcel.</p></div>
+                    </div>
+                </div>
+
+                <!-- ===== WATCH MONITOR PAGE ===== -->
+                <div class="fp-page" id="page-watch">
+                    <h1 class="fp-page-title">Watch Monitor</h1>
+                    <p class="fp-page-subtitle">Parcels under continuous monitoring. New filings trigger alerts within minutes.</p>
+                    <div class="fp-stats">
+                        <div class="fp-stat-card"><div class="fp-stat-label">👁 Watched parcels</div><div class="fp-stat-value">37</div><div class="fp-stat-delta up">↑ 5 this month</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">🔔 Open alerts</div><div class="fp-stat-value">3</div><div class="fp-stat-delta">2 require review</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">📥 New records (7d)</div><div class="fp-stat-value">128</div><div class="fp-stat-delta up">↑ 18%</div></div>
+                        <div class="fp-stat-card"><div class="fp-stat-label">⏱ Median detection</div><div class="fp-stat-value">6m</div><div class="fp-stat-delta">From source publication</div></div>
+                    </div>
+                    <div class="fp-panel" style="margin-top:20px;">
+                        <div class="fp-panel-title">Recent alerts</div>
+                        <div class="fp-pi-row"><span><strong>New lien recorded</strong> — APN 303-122-009</span><span class="fp-pi-meta">12 min ago · Recorder</span></div>
+                        <div class="fp-pi-row"><span><strong>Permit application filed</strong> — APN 511-044-101</span><span class="fp-pi-meta">2 hours ago · Building</span></div>
+                        <div class="fp-pi-row"><span><strong>Hearing scheduled</strong> — APN 218-770-032</span><span class="fp-pi-meta">Yesterday · Clerk</span></div>
                     </div>
                 </div>
 
