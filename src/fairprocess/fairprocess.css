@@ -1281,3 +1281,93 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* ===== Defense Score ===== */
+        .fp-score-layout { display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+        .fp-score-card { display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .fp-score-ring {
+            width: 180px; height: 180px; border-radius: 50%;
+            background: conic-gradient(var(--fp-success) calc(var(--fp-score) * 1%), var(--fp-surface-strong) 0);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;
+        }
+        .fp-score-ring::after { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: var(--fp-surface); }
+        .fp-score-value { position: relative; z-index: 1; font-size: 40px; font-weight: 700; color: var(--fp-success); }
+        .fp-score-caption { position: relative; z-index: 1; font-size: 12px; color: var(--fp-text-tertiary); }
+        .fp-score-note { font-size: 12px; color: var(--fp-text-tertiary); margin-top: 16px; line-height: 1.6; }
+        .fp-score-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-content: start; }
+        .fp-metric-card { background: var(--fp-surface); border: 1px solid var(--fp-border); border-radius: var(--fp-radius); padding: 16px; box-shadow: var(--fp-shadow); }
+        .fp-metric-label { font-size: 12px; color: var(--fp-text-tertiary); }
+        .fp-metric-value { font-size: 28px; font-weight: 700; margin: 6px 0; }
+        .fp-metric-value.good { color: var(--fp-success); }
+        .fp-metric-value.warn { color: var(--fp-warning); }
+        .fp-metric-value.bad { color: var(--fp-danger); }
+        .fp-metric-sub { font-size: 11px; color: var(--fp-text-quaternary); }
+        .fp-metric-bar { height: 6px; border-radius: 3px; background: var(--fp-surface-strong); overflow: hidden; }
+        .fp-metric-bar span { display: block; height: 100%; background: var(--fp-success); border-radius: 3px; }
+
+        .fp-discoveries { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+        .fp-discovery { display: flex; gap: 10px; padding: 12px; border: 1px solid var(--fp-border); border-radius: var(--fp-radius-sm); background: var(--fp-surface-muted); }
+        .fp-discovery-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; background: var(--fp-text-quaternary); }
+        .fp-discovery.critical .fp-discovery-dot { background: var(--fp-danger); }
+        .fp-discovery.warning .fp-discovery-dot { background: var(--fp-warning); }
+        .fp-discovery.verified .fp-discovery-dot { background: var(--fp-success); }
+        .fp-discovery-text { font-size: 13px; font-weight: 500; }
+        .fp-discovery-source { font-size: 11px; color: var(--fp-text-tertiary); margin-top: 2px; }
+
+        .fp-narrative { display: flex; flex-direction: column; gap: 10px; }
+        .fp-narr { font-size: 13px; color: var(--fp-text-secondary); padding-left: 20px; position: relative; line-height: 1.6; }
+        .fp-narr::before { content: "●"; position: absolute; left: 0; font-size: 10px; top: 3px; }
+        .fp-narr.done::before { color: var(--fp-success); }
+        .fp-narr.warn::before { color: var(--fp-warning); }
+        .fp-narr.info::before { color: var(--fp-accent); }
+
+        /* ===== Defense Playbook ===== */
+        .fp-playbook { display: flex; flex-direction: column; gap: 12px; }
+        .fp-play { display: flex; align-items: center; gap: 16px; background: var(--fp-surface); border: 1px solid var(--fp-border); border-radius: var(--fp-radius); padding: 16px; box-shadow: var(--fp-shadow); }
+        .fp-play-rank { width: 32px; height: 32px; border-radius: 50%; background: var(--fp-accent-light); color: var(--fp-accent); font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .fp-play-body { flex: 1; min-width: 0; }
+        .fp-play-title { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .fp-conf { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
+        .fp-conf.high { background: rgba(34,197,94,0.12); color: #15803d; }
+        .fp-conf.medium { background: rgba(245,158,11,0.14); color: #b45309; }
+        .fp-play-reason { font-size: 12px; color: var(--fp-text-tertiary); margin: 4px 0 8px; }
+        .fp-play-bar { height: 5px; border-radius: 3px; background: var(--fp-surface-strong); overflow: hidden; }
+        .fp-play-bar span { display: block; height: 100%; background: var(--fp-success); }
+        .fp-play-bar.medium span { background: var(--fp-warning); }
+        .fp-quick-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+        /* ===== Public Records AI ===== */
+        .fp-records-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+        .fp-record-card { background: var(--fp-surface); border: 1px solid var(--fp-border); border-left: 3px solid var(--fp-accent); border-radius: var(--fp-radius); padding: 14px 16px; box-shadow: var(--fp-shadow); }
+        .fp-record-name { font-size: 13px; font-weight: 600; }
+        .fp-record-meta { font-size: 12px; color: var(--fp-text-tertiary); margin-top: 4px; }
+
+        /* ===== Property Intelligence ===== */
+        .fp-pi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+        .fp-pi-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px; padding: 10px 0; border-bottom: 1px solid var(--fp-border); }
+        .fp-pi-row:last-child { border-bottom: none; }
+        .fp-pi-meta { font-size: 12px; color: var(--fp-text-tertiary); white-space: nowrap; }
+
+        .fp-graph-svg { width: 100%; height: auto; max-height: 360px; }
+        .fp-graph-svg line { stroke: var(--fp-border); stroke-width: 2; }
+        .fp-graph-svg circle { stroke: var(--fp-surface); stroke-width: 3; }
+        .fp-graph-svg text { font-size: 11px; font-weight: 600; fill: #fff; text-anchor: middle; }
+        .n-parcel { fill: #3b82f6; } .n-owner { fill: #22c55e; } .n-permit { fill: #8b5cf6; }
+        .n-violation { fill: #ef4444; } .n-lien { fill: #f59e0b; } .n-hearing { fill: #0ea5e9; }
+        .fp-graph-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 12px; color: var(--fp-text-secondary); }
+        .fp-graph-legend span { display: inline-flex; align-items: center; gap: 6px; }
+        .fp-graph-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+        .fp-graph-legend i.n-parcel { background: #3b82f6; } .fp-graph-legend i.n-owner { background: #22c55e; }
+        .fp-graph-legend i.n-permit { background: #8b5cf6; } .fp-graph-legend i.n-violation { background: #ef4444; }
+        .fp-graph-legend i.n-lien { background: #f59e0b; } .fp-graph-legend i.n-hearing { background: #0ea5e9; }
+
+        .fp-agent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+        .fp-agent-card { background: var(--fp-surface); border: 1px solid var(--fp-border); border-radius: var(--fp-radius); padding: 18px; box-shadow: var(--fp-shadow); }
+        .fp-agent-icon { font-size: 22px; }
+        .fp-agent-num { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fp-text-quaternary); margin-top: 8px; }
+        .fp-agent-name { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+        .fp-agent-card p { font-size: 12px; color: var(--fp-text-tertiary); line-height: 1.6; }
+
+        @media (max-width: 900px) {
+            .fp-score-layout { grid-template-columns: 1fr; }
+            .fp-score-metrics { grid-template-columns: 1fr; }
+        }
